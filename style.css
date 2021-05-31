@@ -1,0 +1,180 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	color: white;
+
+}
+
+
+#contenedor{
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	overflow-x:hidden;
+	min-width: 680px;
+}
+
+
+/*IZQUIERDA*/
+.parteIzquierda{
+	background:#1e213a;
+	width: 30%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.diaActual{
+	width: 70%;
+	margin: 35px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	opacity: 0.8;
+	
+}
+
+#diaActualIzquierda{
+	font-size: 65px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#ciudad{
+	margin-top: 15px;
+	margin-bottom: 40px;
+	font-size: 30px;
+}
+
+#imgDiaActual{
+	width: 80%;
+}
+
+#temperaturaDiaActual{
+	font-size: 100px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+#previsionDiaActual{
+	font-size: 40px;
+	margin-top: 20px;
+}
+
+/*DERECHA*/
+.parteDerecha{
+	width: 70%;
+	height: 100%;
+	background-image: url("nube.png");
+	background-color: rgb(30,33,58, .98);
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-around;
+	justify-content: center;
+	
+}
+	
+.pronostico{
+	width: 80%;
+	height: 200px;
+	margin: 20px;
+	display: flex;
+	align-items: center;
+}
+
+
+.pronosticoDia{
+	width: 30%;
+	height: 90%;
+	background:#1e213a;
+	margin: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	opacity: 0.98;
+	border-radius: 7px;
+}
+
+.imgDia{
+	width:85px;
+}
+h1,h2,h3{
+	opacity: 0.96;
+}
+
+
+.datosAtmosfericos{
+	width: 80%;
+	height: 300px;
+	margin: 10px;
+	display: flex;
+	justify-content: space-between;
+}			
+
+.datosAtmosfericosDentro{
+width: 45%;
+height: 90%;
+background: #1e213a;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+opacity: 0.96;
+border-radius: 7px;
+}
+
+#humedad, #viento,#humedadDiaActual, #vientoDiaActual{
+font-size: 60px;
+opacity: 0.96;
+}		
+						
+
+@media(max-width: 850px){
+	#humedad, #viento{
+		font-size: 40px;
+	}
+}
+
+@media(max-width: 750px){
+
+#contenedor{
+	flex-direction: column;
+	height: 100%;
+	overflow-x:hidden;
+}
+
+.parteIzquierda, .parteDerecha{
+	width: 100%;
+	
+}
+	
+.datosAtmosfericos{
+	align-items: center;
+	flex-direction: column;
+	width: 80%;
+	height: 100vh
+}
+
+.datosAtmosfericosDentro{
+	margin: 15px
+}
+
+.pronostico{
+	flex-direction: column;
+	width: 80%;
+	height: 100vh;
+}
+#imgDiaActual{
+	width: 50%;
+}
+
+.imgDia{
+	margin: 5% 0 2.5% 0;
+}
+
+	
